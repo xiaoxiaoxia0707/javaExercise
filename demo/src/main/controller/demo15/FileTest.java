@@ -4,11 +4,10 @@ import java.io.File;
 
 public class FileTest {
     public static void main(String[] args) {
-        File file=new File("word.txt"); //创建文件对象
+        File file=new File("g:/word.txt"); //创建文件对象
         if(file.exists()){     //如果该文件存在
             file.delete();    //将文件删除
             System.out.println("文件已删除");
-
         }else{ //如果文件不存在
             try{ //try语句块捕捉可能出现的异常
                 file.createNewFile();//创建该文件
